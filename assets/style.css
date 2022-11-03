@@ -64,7 +64,7 @@ input {
     background-color: transparent;
     color: white;
     font-size: 12pt;
-    padding-inline: 15px;
+    padding-inline: 20px;
     padding-bottom: 0px;
 }
 
@@ -87,6 +87,31 @@ button {
 button:hover {
     cursor: pointer;
     background-color: #3f3f3f;
+}
+
+.hidden {
+    display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #292929;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f;
 }
 
 .red {
