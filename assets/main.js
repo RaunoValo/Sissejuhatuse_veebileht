@@ -9,7 +9,7 @@ function searchItems() {
     // Käib üle iga elemendi
     for (var item of grid) {
         // Kui päring on / ei ole elemendi <p></p> elemendi sees-
-        if (item.getElementsByTagName("p")[0].innerHTML.includes(searchBar.value.toUpperCase())) {
+        if (item.getElementsByTagName("p")[0].innerHTML.includes(searchBar.value.toUpperCase()) || item.classList[1].includes(searchBar.value.toLowerCase())) {
             // -ära peida elementi
             item.classList.remove("hidden");
         } else {
