@@ -3,6 +3,7 @@
 // Muutujad elementide jaoks
 var searchBar = document.getElementById("search");
 var grid = document.getElementsByClassName("grid-item");
+var noResultsText = document.getElementsByClassName("no-results")[0];
 
 // Otsingufunktsioon
 function searchItems() {
@@ -16,6 +17,13 @@ function searchItems() {
             // -peida element
             item.classList.add("hidden");
         }
+    }
+
+    // Kui peidetud elemente on sama palju kui üldse elemente kokku (ehk kõik on peidetud)
+    if (grid.length == document.getElementsByClassName("hidden").length) {
+        noResultsText.style.display = "block";
+    } else {
+        noResultsText.style.display = "none";
     }
 }
 
