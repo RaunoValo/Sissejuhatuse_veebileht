@@ -31,4 +31,3 @@ function searchItems() {
 searchBar.addEventListener("keyup", () => {
     searchItems()
 });
-
